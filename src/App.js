@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/Welcome/Welcome';
+import Reverse from './components/Reverse/Reverse';
+import TodoList from './components/TodoList/TodoList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Welcome nome="Michel" sobrenome="Schmidt"/>
+      <div className="reverse">
+        <p className="app-text">Desifre a palavra emblemática sobre o Mundo da Pizza:</p>
+        <Reverse>Pizza: a desculpa perfeita!</Reverse>
+      </div>
+      <TodoList/>
     </div>
   );
 }
